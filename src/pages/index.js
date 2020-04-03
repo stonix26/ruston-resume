@@ -1,20 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="about" />
+    <h1 className="glitch" data-text="Ruston Emperua">
+      Ruston Emperua
+    </h1>
+    <p>
+      Cebu City, Philippines, 6000{" | "}
+      <a href="mailto:ruston2601@gmail.com">ruston2601@gmail.com</a>
+    </p>
+    <p>
+      I am experienced in leveraging agile frameworks to provide a robust
+      synopsis for high level overviews. Iterative approaches to corporate
+      strategy foster collaborative thinking to further the overall value
+      proposition.
+    </p>
   </Layout>
 )
 

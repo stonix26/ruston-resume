@@ -1,42 +1,49 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = () => {
+  const { profileImage } = useStaticQuery(graphql`
+    query {
+      profileImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 320) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <header>
+      <div className="profile-container">
+        <Img
+          className="profile"
+          fluid={profileImage.childImageSharp.fluid}
+          alt="Ruston Emperua"
+        />
+      </div>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+      <p>
+        <Link to="/">about</Link>
+      </p>
+      <p>
+        <Link to="/experience/">experience</Link>
+      </p>
+      <p>
+        <Link to="/education/">education</Link>
+      </p>
+      <p>
+        <Link to="/skills/">skills</Link>
+      </p>
+      <p>
+        <Link to="/interests/">interests</Link>
+      </p>
+      <p>
+        <Link to="/awards/">awards</Link>
+      </p>
+    </header>
+  )
 }
 
 export default Header
