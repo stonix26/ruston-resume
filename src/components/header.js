@@ -25,22 +25,34 @@ const Header = () => {
       </div>
 
       <p>
-        <Link to="/">about</Link>
+        <Link to="/" activeClassName="active">
+          about
+        </Link>
       </p>
       <p>
-        <Link to="/experience/">experience</Link>
+        <Link to="/experience/" activeClassName="active">
+          experience
+        </Link>
       </p>
       <p>
-        <Link to="/education/">education</Link>
+        <Link to="/education/" activeClassName="active">
+          education
+        </Link>
       </p>
       <p>
-        <Link to="/skills/">skills</Link>
+        <Link to="/skills/" activeClassName="active">
+          skills
+        </Link>
       </p>
       <p>
-        <Link to="/interests/">interests</Link>
+        <Link to="/interests/" activeClassName="active">
+          interests
+        </Link>
       </p>
       <p>
-        <Link to="/awards/">awards</Link>
+        <Link to="/awards/" activeClassName="active">
+          awards
+        </Link>
       </p>
     </header>
   )
