@@ -30,27 +30,27 @@ const Header = () => {
         </Link>
       </p>
       <p>
-        <Link to="/experience/" activeClassName="active">
+        <Link to="/experience" activeClassName="active">
           experience
         </Link>
       </p>
       <p>
-        <Link to="/education/" activeClassName="active">
+        <Link to="/education" activeClassName="active">
           education
         </Link>
       </p>
       <p>
-        <Link to="/skills/" activeClassName="active">
+        <Link to="/skills" activeClassName="active">
           skills
         </Link>
       </p>
       <p>
-        <Link to="/interests/" activeClassName="active">
+        <Link to="/interests" activeClassName="active">
           interests
         </Link>
       </p>
       <p>
-        <Link to="/awards/" activeClassName="active">
+        <Link to="/awards" activeClassName="active">
           awards
         </Link>
       </p>
