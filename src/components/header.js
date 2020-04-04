@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = () => {
   const { profileImage } = useStaticQuery(graphql`
@@ -25,34 +26,34 @@ const Header = () => {
       </div>
 
       <p>
-        <Link to="/" activeClassName="active">
+        <AniLink fade to="/" activeClassName="active">
           about
-        </Link>
+        </AniLink>
       </p>
       <p>
-        <Link to="/experience" activeClassName="active">
+        <AniLink fade to="/experience" activeClassName="active">
           experience
-        </Link>
+        </AniLink>
       </p>
       <p>
-        <Link to="/education" activeClassName="active">
+        <AniLink fade to="/education" activeClassName="active">
           education
-        </Link>
+        </AniLink>
       </p>
       <p>
-        <Link to="/skills" activeClassName="active">
+        <AniLink fade to="/skills" activeClassName="active">
           skills
-        </Link>
+        </AniLink>
       </p>
       <p>
-        <Link to="/interests" activeClassName="active">
+        <AniLink fade to="/interests" activeClassName="active">
           interests
-        </Link>
+        </AniLink>
       </p>
       <p>
-        <Link to="/awards" activeClassName="active">
+        <AniLink fade to="/awards" activeClassName="active">
           awards
-        </Link>
+        </AniLink>
       </p>
     </header>
   )
