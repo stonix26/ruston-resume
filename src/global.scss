@@ -130,6 +130,27 @@ $sidebar-color: #1b191f;
         font-weight: 100;
         margin-bottom: 2rem;
       }
+
+      .social-container {
+        display: inline-block;
+
+        a {
+          margin-right: 1rem;
+
+          .icons {
+            color: white;
+            font-size: 2rem;
+            transition: all 0.2s ease;
+          }
+
+          .colored-icons {
+            color: $btn-color;
+            font-size: 2rem;
+            transition: all 0.2s ease;
+            transform: scale(1.1);
+          }
+        }
+      }
     }
 
     footer {
@@ -138,11 +159,11 @@ $sidebar-color: #1b191f;
       font-weight: 100;
 
       a {
-        color: $btn-color;
+        color: white;
         text-decoration: none;
 
         &:hover {
-          text-decoration: underline;
+          color: $btn-color;
         }
       }
     }
