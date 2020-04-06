@@ -1,4 +1,8 @@
 import React, { useState } from "react"
+
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGithub,
@@ -15,6 +19,8 @@ const IndexPage = () => {
   const [linkedinIconColor, setLinkedinIconColor] = useState(false)
   const [twitterIconColor, setTwitterIconColor] = useState(false)
   const [facebookIconColor, setFacebookIconColor] = useState(false)
+
+  config.autoAddCss = false
 
   return (
     <Layout>
