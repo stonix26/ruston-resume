@@ -1,0 +1,29 @@
+{
+    "title": "Experience",
+    "content": [
+        {
+            "duration": "Jun 2019 - Present",
+            "position": "Fullstack Web Developer",
+            "company": "HumanIQ (previously SynergyTS)",
+            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+        },
+        {
+            "duration": "Feb 2018 - May 2019",
+            "position": "Web Developer",
+            "company": "eLink Systems & Concepts Corp.",
+            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+        },
+        {
+            "duration": "Feb 2017 - Feb 2018",
+            "position": "Junior Developer",
+            "company": "Binary Ideas Creative Solutions",
+            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+        },
+        {
+            "duration": "Jul 2016 - Dec 2016",
+            "position": "Backend Developer",
+            "company": "Biz1 Global Solutions, Inc.",
+            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+        }
+    ]
+}

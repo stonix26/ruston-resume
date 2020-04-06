@@ -151,6 +151,58 @@ $sidebar-color: #1b191f;
           }
         }
       }
+
+      .exp-container {
+        background-color: $sidebar-color;
+        margin-top: 2rem;
+        display: block;
+        position: relative;
+        padding: 0 2rem;
+
+        &::before,
+        &:last-child::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: calc(100% + 2rem);
+          width: 2rem;
+          top: 0.6rem;
+          left: 0;
+          z-index: 1;
+        }
+
+        &::before {
+          border-top: solid 2px $btn-color;
+          border-left: solid 2px $btn-color;
+        }
+
+        &:last-child::before {
+          border-top: solid 2px $btn-color;
+          border-left: none;
+        }
+
+        .duration {
+          color: white;
+          margin: unset;
+          background-color: $btn-color;
+          display: inline;
+          padding: 2px 5px;
+        }
+
+        .position {
+          font-size: 1.6rem;
+          color: white;
+          margin-top: 1.5rem;
+
+          span {
+            font-size: 1rem;
+          }
+        }
+
+        .description {
+          margin-top: 1rem;
+        }
+      }
     }
 
     footer {

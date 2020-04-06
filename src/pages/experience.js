@@ -3,20 +3,21 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import JSONData from "../../content/experience.json"
+
 const ExperiencePage = () => (
   <Layout>
-    <SEO title="experience" />
-    <h2>Experience</h2>
-    <p>
-      Cebu City, Philippines, 6000{" | "}
-      <a href="mailto:ruston2601@gmail.com">ruston2601@gmail.com</a>
-    </p>
-    <p>
-      I am experienced in leveraging agile frameworks to provide a robust
-      synopsis for high level overviews. Iterative approaches to corporate
-      strategy foster collaborative thinking to further the overall value
-      proposition.
-    </p>
+    <SEO title={JSONData.title} />
+    <h2>{JSONData.title}</h2>
+    {JSONData.content.map((data, i) => (
+      <div className="exp-container" key={i}>
+        <p className="duration">{data.duration}</p>
+        <h3 className="position">
+          {data.position} - <span>{data.company}</span>
+        </h3>
+        <p className="description">{data.description}</p>
+      </div>
+    ))}
   </Layout>
 )
 
