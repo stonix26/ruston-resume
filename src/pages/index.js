@@ -1,84 +1,48 @@
 import React, { useState } from "react"
 
-import { config } from "@fortawesome/fontawesome-svg-core"
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons"
+import "../utils/fontawesome"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => {
-  const [gitIconColor, setGitIconColor] = useState(false)
-  const [linkedinIconColor, setLinkedinIconColor] = useState(false)
-  const [twitterIconColor, setTwitterIconColor] = useState(false)
-  const [facebookIconColor, setFacebookIconColor] = useState(false)
+import JSONData from "../../content/about.json"
 
-  config.autoAddCss = false
+const IndexPage = () => {
+  const [hoverEffect, setHoverEffect] = useState(false)
+  const [iconIndex, setIconIndex] = useState(null)
 
   return (
     <Layout>
-      <SEO title="about" />
-      <h1 className="glitch" data-text="Ruston Emperua">
-        Ruston Emperua
+      <SEO title={JSONData.title} />
+      <h1 className="glitch" data-text={JSONData.name}>
+        {JSONData.name}
       </h1>
       <p>
-        Cebu City, Philippines, 6000{" | "}
-        <a href="mailto:ruston2601@gmail.com">ruston2601@gmail.com</a>
+        {JSONData.address}
+        {" | "}
+        <a href={`mailto:${JSONData.email}`}>{JSONData.email}</a>
       </p>
-      <p>
-        I am experienced in leveraging agile frameworks to provide a robust
-        synopsis for high level overviews. Iterative approaches to corporate
-        strategy foster collaborative thinking to further the overall value
-        proposition.
-      </p>
+      <p>{JSONData.description}</p>
       <div className="social-container">
-        <a
-          href="https://github.com/stonix26"
-          onMouseEnter={() => setGitIconColor(true)}
-          onMouseLeave={() => setGitIconColor(false)}
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className={gitIconColor ? "colored-icons" : "icons"}
-          />
-        </a>
-        <a
-          href="https://linkedin.com"
-          onMouseEnter={() => setLinkedinIconColor(true)}
-          onMouseLeave={() => setLinkedinIconColor(false)}
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className={linkedinIconColor ? "colored-icons" : "icons"}
-          />
-        </a>
-        <a
-          href="https://twitter.com"
-          onMouseEnter={() => setTwitterIconColor(true)}
-          onMouseLeave={() => setTwitterIconColor(false)}
-        >
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className={twitterIconColor ? "colored-icons" : "icons"}
-          />
-        </a>
-        <a
-          href="https://facebook.com"
-          onMouseEnter={() => setFacebookIconColor(true)}
-          onMouseLeave={() => setFacebookIconColor(false)}
-        >
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className={facebookIconColor ? "colored-icons" : "icons"}
-          />
-        </a>
+        {JSONData.socialSites.map((data, i) => (
+          <a key={i} href={data.url}>
+            <FontAwesomeIcon
+              icon={["fab", `${data.icon}`]}
+              onMouseEnter={() => {
+                setHoverEffect(true)
+                setIconIndex(i)
+              }}
+              onMouseLeave={() => {
+                setHoverEffect(false)
+                setIconIndex(null)
+              }}
+              className={
+                hoverEffect && iconIndex === i ? "colored-icons" : "icons"
+              }
+            />
+          </a>
+        ))}
       </div>
     </Layout>
   )

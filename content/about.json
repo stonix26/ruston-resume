@@ -1,0 +1,25 @@
+{
+    "title": "about",
+    "name": "Ruston Emperua",
+    "address": "Cebu City, Philippines, 6000",
+    "email": "ruston2601@gmail.com",
+    "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
+    "socialSites": [
+        {
+            "url": "https://github.com/stonix26",
+            "icon": "github"
+        },
+        {
+            "url": "https://linkedin.com",
+            "icon": "linkedin"
+        },
+        {
+            "url": "https://twitter.com",
+            "icon": "twitter"
+        },
+        {
+            "url": "https://facebook.com",
+            "icon": "facebook"
+        }
+    ]
+}
