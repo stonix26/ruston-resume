@@ -41,6 +41,31 @@ $main-color: #131217;
 $btn-color: #663399;
 $sidebar-color: #1b191f;
 
+// Custom scrollbar
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $btn-color;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
 .layout-container {
   width: 100%;
   min-height: 100vh;
@@ -57,6 +82,10 @@ $sidebar-color: #1b191f;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+
+    position: sticky;
+    top: 0;
+    height: 100vh;
 
     .profile-container {
       padding: 1.5rem;
@@ -209,6 +238,7 @@ $sidebar-color: #1b191f;
       color: whitesmoke;
       font-family: "Roboto Mono", monospace;
       font-weight: 100;
+      margin-top: 2rem;
 
       a {
         color: white;
