@@ -3,20 +3,19 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import JSONData from "../../content/education.json"
+
 const EducationPage = () => (
   <Layout>
-    <SEO title="education" />
-    <h2>Education</h2>
-    <p>
-      Cebu City, Philippines, 6000{" | "}
-      <a href="mailto:ruston2601@gmail.com">ruston2601@gmail.com</a>
-    </p>
-    <p>
-      I am experienced in leveraging agile frameworks to provide a robust
-      synopsis for high level overviews. Iterative approaches to corporate
-      strategy foster collaborative thinking to further the overall value
-      proposition.
-    </p>
+    <SEO title={JSONData.title.toLowerCase()} />
+    <h2>{JSONData.title}</h2>
+    {JSONData.content.map((data, i) => (
+      <div key={i} className="educ-container">
+        <h3>{data.school}</h3>
+        <h4>{data.major}</h4>
+        <p className="sy">{data.sy}</p>
+      </div>
+    ))}
   </Layout>
 )
 
