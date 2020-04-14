@@ -1,0 +1,63 @@
+{
+    "title": "Skills",
+    "languages-and-tools": [
+        {
+            "name": "HTML5",
+            "icon": "html5"
+        },
+        {
+            "name": "CSS3",
+            "icon": "css3-alt"
+        },
+        {
+            "name": "Javascript",
+            "icon": "js-square"
+        },
+        {
+            "name": "Sass",
+            "icon": "sass"
+        },
+        {
+            "name": "React",
+            "icon": "react"
+        },
+        {
+            "name": "NPM",
+            "icon": "npm"
+        },
+        {
+            "name": "Wordpress",
+            "icon": "wordpress"
+        },
+        {
+            "name": "Hubspot",
+            "icon": "hubspot"
+        },
+        {
+            "name": "Git",
+            "icon": "git"
+        },
+        {
+            "name": "cPanel",
+            "icon": "cpanel"
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "bootstrap"
+        }
+    ],
+    "workflow": [
+        {
+            "name": "Mobile-First, Responsive Design"
+        },
+        {
+            "name": "Cross Browser Testing & Debugging"
+        },
+        {
+            "name": "Cross Functional Teams"
+        },
+        {
+            "name": "Agile Development & Scrum"
+        }
+    ]
+}

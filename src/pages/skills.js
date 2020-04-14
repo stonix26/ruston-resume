@@ -1,23 +1,57 @@
-import React from "react"
+import React, { useState } from "react"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import "../utils/fontawesome"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SkillsPage = () => (
-  <Layout>
-    <SEO title="skills" />
-    <h2>Skills</h2>
-    <p>
-      Cebu City, Philippines, 6000{" | "}
-      <a href="mailto:ruston2601@gmail.com">ruston2601@gmail.com</a>
-    </p>
-    <p>
-      I am experienced in leveraging agile frameworks to provide a robust
-      synopsis for high level overviews. Iterative approaches to corporate
-      strategy foster collaborative thinking to further the overall value
-      proposition.
-    </p>
-  </Layout>
-)
+import JSONdata from "../../content/skills.json"
+
+const SkillsPage = () => {
+  const [hoverEffect, setHoverEffect] = useState(false)
+  const [iconIndex, setIconIndex] = useState(null)
+
+  return (
+    <Layout>
+      <SEO title={JSONdata.title.toLowerCase()} />
+      <h2>{JSONdata.title}</h2>
+      <div className="skill-container">
+        <h3>Programming Languages &amp; Tools</h3>
+        <div className="skill-icons">
+          {JSONdata["languages-and-tools"].map((data, i) => (
+            <FontAwesomeIcon
+              key={i}
+              icon={["fab", `${data.icon}`]}
+              onMouseEnter={() => {
+                setHoverEffect(true)
+                setIconIndex(i)
+              }}
+              onMouseLeave={() => {
+                setHoverEffect(false)
+                setIconIndex(null)
+              }}
+              className={
+                hoverEffect && iconIndex === i ? "colored-icons" : "icons"
+              }
+              title={data.name}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="workflow-container">
+        <h3>Workflow</h3>
+        <ul>
+          {JSONdata.workflow.map((data, i) => (
+            <li key={i}>
+              <FontAwesomeIcon icon={faCheck} /> {data.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Layout>
+  )
+}
 
 export default SkillsPage
