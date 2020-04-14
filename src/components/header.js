@@ -14,6 +14,33 @@ const Header = () => {
       }
     }
   `)
+
+  const links = [
+    {
+      name: "about",
+      url: "/",
+    },
+    {
+      name: "experience",
+      url: "/experience",
+    },
+    {
+      name: "education",
+      url: "/education",
+    },
+    {
+      name: "skills",
+      url: "/skills",
+    },
+    {
+      name: "interests",
+      url: "/interests",
+    },
+    {
+      name: "awards",
+      url: "/awards",
+    },
+  ]
   return (
     <header>
       <div className="profile-container">
@@ -24,36 +51,13 @@ const Header = () => {
         />
       </div>
 
-      <p>
-        <Link to="/" activeClassName="active">
-          about
-        </Link>
-      </p>
-      <p>
-        <Link to="/experience" activeClassName="active">
-          experience
-        </Link>
-      </p>
-      <p>
-        <Link to="/education" activeClassName="active">
-          education
-        </Link>
-      </p>
-      <p>
-        <Link to="/skills" activeClassName="active">
-          skills
-        </Link>
-      </p>
-      <p>
-        <Link to="/interests" activeClassName="active">
-          interests
-        </Link>
-      </p>
-      <p>
-        <Link to="/awards" activeClassName="active">
-          awards
-        </Link>
-      </p>
+      {links.map((link, i) => (
+        <p key={i}>
+          <Link to={link.url} activeClassName="active">
+            {link.name}
+          </Link>
+        </p>
+      ))}
     </header>
   )
 }
