@@ -14,7 +14,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title={JSONData.title} />
+      <SEO title={JSONData.title.toLowerCase()} />
       <h1 className="glitch" data-text={JSONData.name}>
         {JSONData.name}
       </h1>

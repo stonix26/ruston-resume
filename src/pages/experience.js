@@ -7,7 +7,7 @@ import JSONData from "../../content/experience.json"
 
 const ExperiencePage = () => (
   <Layout>
-    <SEO title={JSONData.title} />
+    <SEO title={JSONData.title.toLowerCase()} />
     <h2>{JSONData.title}</h2>
     {JSONData.content.map((data, i) => (
       <div className="exp-container" key={i}>
