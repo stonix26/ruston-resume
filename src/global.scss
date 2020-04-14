@@ -277,11 +277,24 @@ $sidebar-color: #1b191f;
         h3 {
           color: whitesmoke;
           font-size: 1.75rem;
+          display: inline;
+          position: relative;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            width: 65%;
+            height: 1px;
+            background-color: $btn-color;
+          }
         }
 
         .skill-icons {
           display: block;
-          margin-top: 2rem;
+          margin-top: 3rem;
 
           .icons {
             color: white;
@@ -306,7 +319,7 @@ $sidebar-color: #1b191f;
         ul {
           color: whitesmoke;
           font-weight: 100;
-          margin-top: 1.5rem;
+          margin-top: 3rem;
         }
       }
     }
