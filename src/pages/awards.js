@@ -1,22 +1,24 @@
 import React from "react"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTrophy } from "@fortawesome/free-solid-svg-icons"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import JSONData from "../../content/awards.json"
+
 const AwardsPage = () => (
   <Layout>
-    <SEO title="awards" />
-    <h2>Awards</h2>
-    <p>
-      Cebu City, Philippines, 6000{" | "}
-      <a href="mailto:ruston2601@gmail.com">ruston2601@gmail.com</a>
-    </p>
-    <p>
-      I am experienced in leveraging agile frameworks to provide a robust
-      synopsis for high level overviews. Iterative approaches to corporate
-      strategy foster collaborative thinking to further the overall value
-      proposition.
-    </p>
+    <SEO title={JSONData.title.toLowerCase()} />
+    <h2>{JSONData.title}</h2>
+    <ul className="awards">
+      {JSONData.awards.map((data, i) => (
+        <li key={i}>
+          <FontAwesomeIcon icon={faTrophy} /> {data.name}
+        </li>
+      ))}
+    </ul>
   </Layout>
 )
 
