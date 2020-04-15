@@ -16,9 +16,7 @@ const SkillsPage = () => {
   return (
     <Layout>
       <SEO title={JSONData.title.toLowerCase()} />
-      <h2 className="glitch" data-text={JSONData.title}>
-        {JSONData.title}
-      </h2>
+      <h2>{JSONData.title}</h2>
       <div className="skill-container">
         <h3>Programming Languages &amp; Tools</h3>
         <div className="skill-icons">
