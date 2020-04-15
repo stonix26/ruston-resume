@@ -163,6 +163,19 @@ $sidebar-color: #1b191f;
 
       .social-container {
         display: inline-block;
+        position: relative;
+        margin-top: 2rem;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -1.5rem;
+          left: 0;
+          width: 25%;
+          height: 1px;
+          background-color: $btn-color;
+        }
 
         a {
           margin-right: 1rem;
