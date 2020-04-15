@@ -8,7 +8,9 @@ import JSONData from "../../content/education.json"
 const EducationPage = () => (
   <Layout>
     <SEO title={JSONData.title.toLowerCase()} />
-    <h2>{JSONData.title}</h2>
+    <h2 className="glitch" data-text={JSONData.title}>
+      {JSONData.title}
+    </h2>
     {JSONData.content.map((data, i) => (
       <div key={i} className="educ-container">
         <h3>{data.school}</h3>

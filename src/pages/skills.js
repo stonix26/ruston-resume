@@ -7,7 +7,7 @@ import "../utils/fontawesome"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import JSONdata from "../../content/skills.json"
+import JSONData from "../../content/skills.json"
 
 const SkillsPage = () => {
   const [hoverEffect, setHoverEffect] = useState(false)
@@ -15,12 +15,14 @@ const SkillsPage = () => {
 
   return (
     <Layout>
-      <SEO title={JSONdata.title.toLowerCase()} />
-      <h2>{JSONdata.title}</h2>
+      <SEO title={JSONData.title.toLowerCase()} />
+      <h2 className="glitch" data-text={JSONData.title}>
+        {JSONData.title}
+      </h2>
       <div className="skill-container">
         <h3>Programming Languages &amp; Tools</h3>
         <div className="skill-icons">
-          {JSONdata["languages-and-tools"].map((data, i) => (
+          {JSONData["languages-and-tools"].map((data, i) => (
             <FontAwesomeIcon
               key={i}
               icon={["fab", `${data.icon}`]}
@@ -43,7 +45,7 @@ const SkillsPage = () => {
       <div className="workflow-container">
         <h3>Workflow</h3>
         <ul>
-          {JSONdata.workflow.map((data, i) => (
+          {JSONData.workflow.map((data, i) => (
             <li key={i}>
               <FontAwesomeIcon icon={faCheck} /> {data.name}
             </li>
