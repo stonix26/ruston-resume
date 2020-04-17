@@ -9,7 +9,10 @@ const InterestsPage = () => (
   <Layout>
     <SEO title={JSONData.title.toLowerCase()} />
     <h2>{JSONData.title}</h2>
-    <p className="interest-content">{JSONData.content}</p>
+    <p
+      className="interest-content"
+      dangerouslySetInnerHTML={{ __html: JSONData.content }}
+    />
   </Layout>
 )
 

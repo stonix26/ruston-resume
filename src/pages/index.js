@@ -23,7 +23,7 @@ const IndexPage = () => {
         {" | "}
         <a href={`mailto:${JSONData.email}`}>{JSONData.email}</a>
       </p>
-      <p>{JSONData.description}</p>
+      <p dangerouslySetInnerHTML={{ __html: JSONData.description }} />
       <div className="social-container">
         {JSONData.socialSites.map((data, i) => (
           <a key={i} href={data.url}>

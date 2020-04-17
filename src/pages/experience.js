@@ -15,7 +15,10 @@ const ExperiencePage = () => (
         <h3 className="position">
           {data.position} - <span>{data.company}</span>
         </h3>
-        <p className="description">{data.description}</p>
+        <p
+          className="description"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        />
       </div>
     ))}
   </Layout>
