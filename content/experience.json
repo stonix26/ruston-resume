@@ -5,25 +5,59 @@
             "duration": "Jun 2019 - Present",
             "position": "Fullstack Web Developer",
             "company": "HumanIQ (previously SynergyTS)",
-            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+            "responsibilities": [
+                {
+                    "desc": "Developed websites using Wordpress with hubspot chat integrations"
+                },
+                {
+                    "desc": "Developed e-commerce website using woocommerce"
+                },
+                {
+                    "desc": "Built blazing fast website using GatsbyJS with WordPress with 90+ speed & SEO scores in Google lighthouse with hubspot chat integrations"
+                }
+            ]
         },
         {
             "duration": "Feb 2018 - May 2019",
             "position": "Web Developer",
             "company": "eLink Systems & Concepts Corp.",
-            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+            "responsibilities": [
+                {
+                    "desc": "Developed Wordpress with Woocommerce integration using Divi Builder"
+                },
+                {
+                    "desc": "Collaborate with designers to create clean interfaces and simple, intuitive interactions and experiences"
+                },
+                {
+                    "desc": "Developed an internal system using Vue.JS with Firebase"
+                }
+            ]
         },
         {
             "duration": "Feb 2017 - Feb 2018",
             "position": "Junior Developer",
             "company": "Binary Ideas Creative Solutions",
-            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+            "responsibilities": [
+                {
+                    "desc": "Developed mobile responsive Wordpress websites with Sage standards"
+                },
+                {
+                    "desc": "Cooperate with web designers to match visual design intent"
+                }
+            ]
         },
         {
             "duration": "Jul 2016 - Dec 2016",
             "position": "Backend Developer",
             "company": "Biz1 Global Solutions, Inc.",
-            "description": "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+            "responsibilities": [
+                {
+                    "desc": "Developed reusable modules for Odoo/OpenERP using Python and XML"
+                },
+                {
+                    "desc": "Collaborated on enhancing the system's UI/UX"
+                }
+            ]
         }
     ]
 }

@@ -200,7 +200,7 @@ $sidebar-color: #1b191f;
         margin-top: 2rem;
         display: block;
         position: relative;
-        padding: 0 2rem;
+        padding: 0 2rem 2rem 2rem;
 
         &::before,
         &:last-child::before {
@@ -242,8 +242,15 @@ $sidebar-color: #1b191f;
           }
         }
 
-        .description {
-          margin-top: 1rem;
+        .responsibilities {
+          color: whitesmoke;
+          list-style: square outside none;
+          margin-left: 1.2rem;
+          line-height: 1.5rem;
+
+          li {
+            font-weight: 100;
+          }
         }
       }
 

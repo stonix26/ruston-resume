@@ -13,14 +13,16 @@ const SkillsPage = () => {
   const [hoverEffect, setHoverEffect] = useState(false)
   const [iconIndex, setIconIndex] = useState(null)
 
+  const { title, languages_and_tools, workflow } = JSONData
+
   return (
     <Layout>
-      <SEO title={JSONData.title.toLowerCase()} />
-      <h2>{JSONData.title}</h2>
+      <SEO title={title.toLowerCase()} />
+      <h2>{title}</h2>
       <div className="skill-container">
         <h3>Programming Languages &amp; Tools</h3>
         <div className="skill-icons">
-          {JSONData["languages-and-tools"].map((data, i) => (
+          {languages_and_tools.map((data, i) => (
             <FontAwesomeIcon
               key={i}
               icon={["fab", `${data.icon}`]}
@@ -43,7 +45,7 @@ const SkillsPage = () => {
       <div className="workflow-container">
         <h3>Workflow</h3>
         <ul>
-          {JSONData.workflow.map((data, i) => (
+          {workflow.map((data, i) => (
             <li key={i}>
               <FontAwesomeIcon icon={faCheck} /> {data.name}
             </li>

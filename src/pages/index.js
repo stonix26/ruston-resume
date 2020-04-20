@@ -12,20 +12,22 @@ const IndexPage = () => {
   const [hoverEffect, setHoverEffect] = useState(false)
   const [iconIndex, setIconIndex] = useState(null)
 
+  const { title, name, address, email, description, socialSites } = JSONData
+
   return (
     <Layout>
-      <SEO title={JSONData.title.toLowerCase()} />
-      <h1 className="glitch" data-text={JSONData.name}>
-        {JSONData.name}
+      <SEO title={title.toLowerCase()} />
+      <h1 className="glitch" data-text={name}>
+        {name}
       </h1>
       <p>
-        {JSONData.address}
+        {address}
         {" | "}
-        <a href={`mailto:${JSONData.email}`}>{JSONData.email}</a>
+        <a href={`mailto:${email}`}>{email}</a>
       </p>
-      <p dangerouslySetInnerHTML={{ __html: JSONData.description }} />
+      <p dangerouslySetInnerHTML={{ __html: description }} />
       <div className="social-container">
-        {JSONData.socialSites.map((data, i) => (
+        {socialSites.map((data, i) => (
           <a key={i} href={data.url}>
             <FontAwesomeIcon
               icon={["fab", `${data.icon}`]}
