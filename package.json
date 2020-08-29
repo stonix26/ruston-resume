@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ruston Emperua <stonix26@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.4.3",
     "gsap": "^3.2.6",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
