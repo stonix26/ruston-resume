@@ -94,6 +94,8 @@ $sidebar-color: #1b191f;
       .profile {
         border-radius: 50%;
         border: solid 0.5rem $btn-color;
+        max-width: 14em;
+        max-height: 14em;
       }
     }
 
