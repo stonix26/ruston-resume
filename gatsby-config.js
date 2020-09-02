@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Devtons`,
+    title: `Ruston`,
     description: `My web app resume built with GatsbyJS`,
     author: `Ruston Emperua`,
   },
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Devtons`,
-        short_name: `Devtons`,
+        name: `Ruston`,
+        short_name: `Ruston`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/redux.png`,
       },
     },
     `gatsby-plugin-offline`,
