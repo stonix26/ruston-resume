@@ -1,63 +1,72 @@
 {
-    "title": "Experience",
-    "content": [
+  "title": "Experience",
+  "content": [
+    {
+      "duration": "Jun 2019 - Aug 2020",
+      "position": "Fullstack Web Developer",
+      "company": "HumanIQ (previously SynergyTS)",
+      "responsibilities": [
         {
-            "duration": "Jun 2019 - Present",
-            "position": "Fullstack Web Developer",
-            "company": "HumanIQ (previously SynergyTS)",
-            "responsibilities": [
-                {
-                    "desc": "Developed websites using Wordpress with hubspot chat integrations"
-                },
-                {
-                    "desc": "Developed e-commerce website using woocommerce"
-                },
-                {
-                    "desc": "Built blazing fast website using GatsbyJS with WordPress with 90+ speed & SEO scores in Google lighthouse with hubspot chat integrations"
-                }
-            ]
+          "desc": "Develop e-commerce websites with Woocommerce"
         },
         {
-            "duration": "Feb 2018 - May 2019",
-            "position": "Web Developer",
-            "company": "eLink Systems & Concepts Corp.",
-            "responsibilities": [
-                {
-                    "desc": "Developed Wordpress with Woocommerce integration using Divi Builder"
-                },
-                {
-                    "desc": "Collaborate with designers to create clean interfaces and simple, intuitive interactions and experiences"
-                },
-                {
-                    "desc": "Developed an internal system using Vue.JS with Firebase"
-                }
-            ]
+          "desc": "Contribute on building a client portal's UI using React with Hasura GraphQL engine"
         },
         {
-            "duration": "Feb 2017 - Feb 2018",
-            "position": "Junior Developer",
-            "company": "Binary Ideas Creative Solutions",
-            "responsibilities": [
-                {
-                    "desc": "Developed mobile responsive Wordpress websites with Sage standards"
-                },
-                {
-                    "desc": "Cooperate with web designers to match visual design intent"
-                }
-            ]
+          "desc": "Re-develop old websites using GatsbyJS and improves site’s speed and SEO"
         },
         {
-            "duration": "Jul 2016 - Dec 2016",
-            "position": "Backend Developer",
-            "company": "Biz1 Global Solutions, Inc.",
-            "responsibilities": [
-                {
-                    "desc": "Developed reusable modules for Odoo/OpenERP using Python and XML"
-                },
-                {
-                    "desc": "Collaborated on enhancing the system's UI/UX"
-                }
-            ]
+          "desc": "Managing up websites and domains with Plesk Obsidian"
         }
-    ]
+      ]
+    },
+    {
+      "duration": "Feb 2018 - May 2019",
+      "position": "Web Developer",
+      "company": "eLink Systems & Concepts Corp.",
+      "responsibilities": [
+        {
+          "desc": "Developed Wordpress websites with Divi site builder from a raw PSD"
+        },
+        {
+          "desc": "Collaborate with designers to create clean interfaces and simple, intuitive interactions and experiences"
+        },
+        {
+          "desc": "Developed an internal system using VueJS and Firebase"
+        }
+      ]
+    },
+    {
+      "duration": "Feb 2017 - Feb 2018",
+      "position": "Junior Developer",
+      "company": "Binary Ideas Creative Solutions",
+      "responsibilities": [
+        {
+          "desc": "Performed website design and development for clients using Wordpress specializing in booking, rentals, legal websites, and landing pages"
+        },
+        {
+          "desc": "Optimizing websites for speed and searchability"
+        },
+        {
+          "desc": "Worked closely with senior developer and learned advanced project management skills"
+        }
+      ]
+    },
+    {
+      "duration": "Jul 2016 - Dec 2016",
+      "position": "Backend Developer",
+      "company": "Biz1 Global Solutions, Inc.",
+      "responsibilities": [
+        {
+          "desc": "Developed reusable modules for Odoo/OpenERP using Python and XML"
+        },
+        {
+          "desc": "Creating Odoo QWeb reports"
+        },
+        {
+          "desc": "Collaborated on enhancing the system's UI/UX"
+        }
+      ]
+    }
+  ]
 }
