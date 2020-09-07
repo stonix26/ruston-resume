@@ -7,16 +7,19 @@
       "company": "HumanIQ (previously SynergyTS)",
       "responsibilities": [
         {
-          "desc": "Develop e-commerce websites with Woocommerce"
+          "desc": "Revamped old websites using GatsbyJS, a ReactJS powered framework, sourced from Wordpress using GraphQL, and improves site’s speed and SEO with Hubspot chat system and analytics"
         },
         {
-          "desc": "Contribute on building a client portal's UI using React with Hasura GraphQL engine"
+          "desc": "Collaborated on building system UI’s for a portal system using ReactJS"
         },
         {
-          "desc": "Re-develop old websites using GatsbyJS and improves site’s speed and SEO"
+          "desc": "Developed e-commerce food ordering website with Woocommerce"
         },
         {
-          "desc": "Managing up websites and domains with Plesk Obsidian"
+          "desc": "Liaised with SEO expert, designer, project manager, and CEO as needed"
+        },
+        {
+          "desc": "Managed websites and domains with Plesk Obsidian and performed regular updates on plugins and databases"
         }
       ]
     },
@@ -26,13 +29,13 @@
       "company": "eLink Systems & Concepts Corp.",
       "responsibilities": [
         {
-          "desc": "Developed Wordpress websites with Divi site builder from a raw PSD"
+          "desc": "Developed Wordpress websites using Divi or Elementor from a raw PSD to a functional mobile-friendly websites"
         },
         {
-          "desc": "Collaborate with designers to create clean interfaces and simple, intuitive interactions and experiences"
+          "desc": "Collaborated with designers to create clean interfaces and simple, intuitive interactions and experiences"
         },
         {
-          "desc": "Developed an internal system using VueJS and Firebase"
+          "desc": "Developed an internal project tracker app using VueJS and Firebase"
         }
       ]
     },
@@ -42,13 +45,13 @@
       "company": "Binary Ideas Creative Solutions",
       "responsibilities": [
         {
-          "desc": "Performed website design and development for clients using Wordpress specializing in booking, rentals, legal websites, and landing pages"
+          "desc": "Developed and maintained Wordpress websites specializing in booking, rentals, legal websites, and landing pages"
         },
         {
-          "desc": "Optimizing websites for speed and searchability"
+          "desc": "Maintained Laravel made backend systems"
         },
         {
-          "desc": "Worked closely with senior developer and learned advanced project management skills"
+          "desc": "Worked closely with senior developers and learned advanced project management skills"
         }
       ]
     },
@@ -61,7 +64,7 @@
           "desc": "Developed reusable modules for Odoo/OpenERP using Python and XML"
         },
         {
-          "desc": "Creating Odoo QWeb reports"
+          "desc": "Created Odoo QWeb reports and rendered data visually"
         },
         {
           "desc": "Collaborated on enhancing the system's UI/UX"
